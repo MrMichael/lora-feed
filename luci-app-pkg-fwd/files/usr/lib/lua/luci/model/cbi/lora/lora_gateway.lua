@@ -332,9 +332,9 @@ chan=m:section(TypedSection,"chan","Channel Parameters")
 chan.addremove=true
 chan.anonymous=false
 
-description = chan:option(Value ,"desc",translate("Description"))
-enable.optional = false;
-enable.rmempty = false;
+-- description = chan:option(Value ,"desc",translate("Description"))
+-- enable.optional = false;
+-- enable.rmempty = false;
 
 enable = chan:option(ListValue,"enable",translate("Enable"))
 enable.optional = false;

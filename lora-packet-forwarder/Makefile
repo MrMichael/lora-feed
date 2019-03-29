@@ -43,6 +43,8 @@ define Package/lora-packet-forwarder-utils
   DEPENDS:=+libloragw
 endef
 
+CFLAGS += $(FPIC) -O2 -Wall -Wextra -std=c99 -Iinc -I. -lm
+
 define Package/lora-packet-forwarder/install
 	$(INSTALL_DIR) $(1)/usr/sbin
 	$(INSTALL_BIN) $(PKG_BUILD_DIR)/lora_pkt_fwd/lora_pkt_fwd $(1)/usr/sbin
